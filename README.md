@@ -9,7 +9,10 @@ This project is built as an application for the concepts of hadrware/software co
 3. Used tools: Xillinx  , Keil
 
 * Main software code of the game is located at:
-/software/Application/main.c
+software/Application/main.c
+
+* To see a video for the Maze Runner Game follow this path:
+video/mazeRunner.mp4
 
 * This project has been inmplemented as a requirment for the course [ CE724:Hardware/ software co-design ] as part of GJU master degree program.
 
@@ -19,3 +22,5 @@ This project is built as an application for the concepts of hadrware/software co
  
  * Supervisior: 
  Dr. Omar Hiari ( https://www.linkedin.com/in/omarhiari/ )
+ 
+
