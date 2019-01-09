@@ -1,0 +1,12 @@
+.\retarget.o: device\retarget.c
+.\retarget.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\retarget.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
+.\retarget.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\rt_misc.h
+.\retarget.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\retarget.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\retarget.o: device\EDK_CM0.h
+.\retarget.o: device\edk_driver.h
+.\retarget.o: .\core\core_cm0.h
+.\retarget.o: .\core\core_cmInstr.h
+.\retarget.o: .\core\core_cmFunc.h
+.\retarget.o: device\edk_api.h

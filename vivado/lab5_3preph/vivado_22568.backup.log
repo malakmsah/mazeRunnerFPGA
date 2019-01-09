@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jan  7 14:27:36 2019
+# Process ID: 22568
+# Current directory: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/vivado/lab5_3preph
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21272 C:\Users\Administrator\Desktop\HW_SW design labs\Final_Project\vivado\lab5_3preph\lab5_3preph.xpr
+# Log file: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/vivado/lab5_3preph/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/vivado/lab5_3preph\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/vivado/lab5_3preph/lab5_3preph.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/vivado/lab5_3preph'
+INFO: [Project 1-313] Project file moved from 'C:/Users/Administrator/Desktop/HW_SW design labs/lab7_soc in c/Lab_Code_Solution/vivado/lab5_3preph' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-564] A project save was requested while parsing the project. To prevent a partially loaded project from being committed to disk, this save will not occur.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 844.707 ; gain = 137.461
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  7 14:30:34 2019...

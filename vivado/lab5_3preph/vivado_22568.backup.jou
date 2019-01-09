@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jan  7 14:27:36 2019
+# Process ID: 22568
+# Current directory: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/vivado/lab5_3preph
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21272 C:\Users\Administrator\Desktop\HW_SW design labs\Final_Project\vivado\lab5_3preph\lab5_3preph.xpr
+# Log file: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/vivado/lab5_3preph/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/vivado/lab5_3preph\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/vivado/lab5_3preph/lab5_3preph.xpr}
+update_compile_order -fileset sources_1

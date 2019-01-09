@@ -1,0 +1,766 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jan  7 14:30:59 2019
+# Process ID: 18284
+# Current directory: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22936 C:\Users\Administrator\Desktop\HW_SW design labs\Final_Project\projectFinal\vivado\lab5_3preph\lab5_3preph.xpr
+# Log file: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph'
+INFO: [Project 1-313] Project file moved from 'C:/Users/Administrator/Desktop/HW_SW design labs/lab7_soc in c/Lab_Code_Solution/vivado/lab5_3preph' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-564] A project save was requested while parsing the project. To prevent a partially loaded project from being committed to disk, this save will not occur.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 916.316 ; gain = 197.504
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 15:11:45 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+reset_run synth_1
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 15:17:44 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 15:19:51 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 15:19:56 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Jan  7 15:22:03 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan  7 15:24:29 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/AHBLITE_SYS.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/AHBLITE_SYS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 15:42:42 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 15:45:09 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Jan  7 15:47:40 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 15:51:15 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Jan  7 15:53:49 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan  7 15:55:44 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/AHBLITE_SYS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 16:07:51 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Jan  7 16:09:50 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan  7 16:12:19 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/AHBLITE_SYS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 16:16:32 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Jan  7 16:18:37 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan  7 16:21:48 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/AHBLITE_SYS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 16:28:43 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+launch_runs impl_1 -jobs 4
+[Mon Jan  7 16:30:41 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan  7 16:32:22 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/AHBLITE_SYS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 16:35:21 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Jan  7 16:39:39 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan  7 16:42:06 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/AHBLITE_SYS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 17:01:37 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Jan  7 17:04:39 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan  7 17:06:25 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/AHBLITE_SYS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 17:20:18 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Jan  7 17:22:42 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan  7 17:24:48 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/AHBLITE_SYS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 17:32:43 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Jan  7 17:35:15 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan  7 17:36:56 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/AHBLITE_SYS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 17:52:46 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Jan  7 17:54:55 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan  7 17:56:40 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/AHBLITE_SYS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 18:04:00 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Jan  7 18:06:15 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan  7 18:08:58 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/AHBLITE_SYS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 18:15:33 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+launch_runs impl_1 -jobs 4
+[Mon Jan  7 18:19:23 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan  7 18:21:38 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/AHBLITE_SYS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 18:31:48 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 18:35:15 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Jan  7 18:37:45 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan  7 18:40:31 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/AHBLITE_SYS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/AHBLITE_SYS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 18:54:31 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+launch_runs impl_1 -jobs 4
+[Mon Jan  7 18:56:34 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan  7 18:58:15 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/AHBLITE_SYS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 19:01:40 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+launch_runs impl_1 -jobs 4
+[Mon Jan  7 19:04:30 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan  7 19:06:35 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/AHBLITE_SYS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 19:13:45 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 19:16:54 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+reset_run synth_1
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 19:18:41 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 19:18:45 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Jan  7 19:21:28 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan  7 19:23:52 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/AHBLITE_SYS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+import_files -force -norecurse {{C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/software/code.mem}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jan  7 19:31:01 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Jan  7 19:33:56 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Jan  7 19:35:51 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 147 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/.Xil/Vivado-18284-LapC406-pc04/dcp36/AHBLITE_SYS.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/.Xil/Vivado-18284-LapC406-pc04/dcp36/AHBLITE_SYS.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.621 . Memory (MB): peak = 1979.625 ; gain = 5.461
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.621 . Memory (MB): peak = 1979.625 ; gain = 5.461
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 2077.184 ; gain = 443.395
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD57A
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/AHBLITE_SYS.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/HW_SW design labs/Final_Project/projectFinal/vivado/lab5_3preph/lab5_3preph.runs/impl_1/AHBLITE_SYS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  7 19:38:02 2019...

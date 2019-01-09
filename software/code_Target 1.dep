@@ -1,0 +1,42 @@
+Dependencies for Project 'code', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Application\main.c)(0x5C363165)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\core -I .\device -I .\application-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="526" -D_RTE_ -DARMCM0-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (.\device\EDK_CM0.h)(0x52A187F4)
+I (.\core\core_cm0.h)(0x5243F13A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F2F9E)
+I (.\core\core_cmInstr.h)(0x5171196C)
+I (.\core\core_cmFunc.h)(0x5171196C)
+I (.\device\edk_driver.h)(0x5C362AD4)
+I (.\device\edk_api.h)(0x5C362B67)
+I (C:\Keil_v5\ARM\ARMCC\include\time.h)(0x599F2F9E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F2F9C)
+F (.\device\cm0dsasm.s)(0x5C35DA82)(--cpu Cortex-M0 --li -g --apcs=interwork -I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include--pd "__UVISION_VERSION SETA 526" --pd "_RTE_ SETA 1" --pd "ARMCM0 SETA 1"--list .\cm0dsasm.lst --xref -o .\cm0dsasm.o --depend .\cm0dsasm.d)
+F (.\device\edk_driver.c)(0x5C362AF3)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\core -I .\device -I .\application-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="526" -D_RTE_ -DARMCM0-o .\edk_driver.o --omf_browse .\edk_driver.crf --depend .\edk_driver.d)
+I (device\EDK_CM0.h)(0x52A187F4)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599F2F9C)
+I (device\edk_driver.h)(0x5C362AD4)
+I (.\core\core_cm0.h)(0x5243F13A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F2F9E)
+I (.\core\core_cmInstr.h)(0x5171196C)
+I (.\core\core_cmFunc.h)(0x5171196C)
+I (device\edk_api.h)(0x5C362B67)
+F (.\device\retarget.c)(0x52A187F2)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\core -I .\device -I .\application-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="526" -D_RTE_ -DARMCM0-o .\retarget.o --omf_browse .\retarget.crf --depend .\retarget.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F2F9C)
+I (C:\Keil_v5\ARM\ARMCC\include\time.h)(0x599F2F9E)
+I (C:\Keil_v5\ARM\ARMCC\include\rt_misc.h)(0x599F2F9E)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599F2F9C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F2F9E)
+I (device\EDK_CM0.h)(0x52A187F4)
+I (device\edk_driver.h)(0x5C362AD4)
+I (.\core\core_cm0.h)(0x5243F13A)
+I (.\core\core_cmInstr.h)(0x5171196C)
+I (.\core\core_cmFunc.h)(0x5171196C)
+I (device\edk_api.h)(0x5C362B67)
+F (.\device\edk_api.c)(0x5C362B03)(--c99 -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I .\core -I .\device -I .\application-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="526" -D_RTE_ -DARMCM0-o .\edk_api.o --omf_browse .\edk_api.crf --depend .\edk_api.d)
+I (device\EDK_CM0.h)(0x52A187F4)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599F2F9C)
+I (device\edk_driver.h)(0x5C362AD4)
+I (.\core\core_cm0.h)(0x5243F13A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F2F9E)
+I (.\core\core_cmInstr.h)(0x5171196C)
+I (.\core\core_cmFunc.h)(0x5171196C)
+I (device\edk_api.h)(0x5C362B67)
